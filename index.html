@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVD QUIZ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="	https://assets.wprock.fr/emoji/joypixels/512/1f9db-2642.png">
+</head>
+
+<body>
+    <h1>🧛Welcome <span id="showName"></span> to THE VAMPIRE DIARIES Quiz ‍🧛 </h1>
+    <div class="user" name="user">
+        <label for="userName" id="userName-label">Enter your name</label>
+        <input type="text" id="userName" name="userName">
+    </div>
+    <h3><a class="btn" href="game.html">START GAME</a></h3>
+    <div class= mainContent>
+    <h3 class="content">6 mind-bending trivia questions.</h3>
+    <h3>Fun facts about the Vampire Diaries.</h3>
+    <h3>A precise scoring system.</h3>
+    <p>Take the Vampire Diaries Quiz to get even more fun facts and details about the CW’s beloved show. And do not
+        worry about the scores. They are just there to make things more fun. You can always come back and give it
+        another try or share the results with your friends to make them jealous.
+    </p>
+</div>
+    <script src="./app.js"></script>
+    <script>
+        const userName=document.getElementById("userName");
+        const welcomeText =document.getElementById("showName");
+        userName.addEventListener("input",()=>{
+            welcomeText.innerText=userName.value;
+        });
+    </script>
+</body>
+
+</html>
